@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOP.CO</title>
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+      integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="top-inside">
+            <p>
+              Sign up and get 20% off to your first order.
+              <a href="#">Sign Up Now</a>
+            </p>
+            <button class="xBtn"><i class="ri-close-line"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container">
+          <div class="bottom-inside">
+            <div class="menu-toggle-btns">
+              <button class="menu-btn-mobile icon">
+                <i class="ri-menu-line"></i>
+              </button>
+              <button class="close-btn-mobile hidden icon">
+                <i class="ri-close-line"></i>
+              </button>
+            </div>
+            <a href="?id" class="logo"
+              ><img src="./assets/imgs/logo.png" alt="SHOP.CO logo"
+            /></a>
+            <ul class="nav__lists">
+              <li class="nav__list"><a href="" class="nav__link">Shop</a></li>
+              <li class="nav__list">
+                <a href="" class="nav__link">On Sale</a>
+              </li>
+              <li class="nav__list">
+                <a href="" class="nav__link">New Arrivals</a>
+              </li>
+              <li class="nav__list"><a href="" class="nav__link">Brands</a></li>
+            </ul>
+            <form class="search-form">
+              <button class="search-btn icon">
+                <i class="ri-search-line"></i>
+              </button>
+              <input
+                id="search-input"
+                class="search-input"
+                type="text"
+                placeholder="Search for products..."
+              />
+            </form>
+            <div class="bottom-links">
+              <button class="search-btn-mobile icon">
+                <i class="ri-search-line"></i>
+              </button>
+              <a href="#" class="card-link icon"
+                ><i class="ri-shopping-cart-line"></i
+              ></a>
+              <a href="#" class="profile-link icon"
+                ><i class="ri-account-circle-line"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="overlay hidden"></div>
+    <main>
+      <section class="home">
+        <div class="container">
+          <div class="home-main">
+            <div class="home-left">
+              <div class="home-top">
+                <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+                <p>
+                  Browse through our diverse range of meticulously crafted
+                  garments, designed to bring out your individuality and cater
+                  to your sense of style.
+                </p>
+                <button>Shop Now</button>
+              </div>
+              <div class="home-bottom">
+                <div class="bottom-numbers">
+                  <h3>200+</h3>
+                  <span>International Brands</span>
+                </div>
+                <div class="line"></div>
+                <div class="bottom-numbers">
+                  <h3>2,000+</h3>
+                  <span>High-Quality Products</span>
+                </div>
+                <div class="line line-hidden"></div>
+                <div class="bottom-numbers">
+                  <h3>30,000+</h3>
+                  <span>Happy Customers</span>
+                </div>
+              </div>
+            </div>
+            <div class="home-right">
+              <img src="./assets/imgs/homeBanner.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="brands">
+        <div class="container">
+          <div class="home-brands">
+            <div class="brand-img">
+              <img src="./assets/imgs/versace.png" alt="versace logo" />
+            </div>
+            <div class="brand-img">
+              <img src="./assets/imgs/zara.png" alt="zara logo" />
+            </div>
+            <div class="brand-img">
+              <img src="./assets/imgs/gucci.png" alt="gucci logo" />
+            </div>
+            <div class="brand-img">
+              <img src="./assets/imgs/prada.png" alt="prada logo" />
+            </div>
+            <div class="brand-img">
+              <img
+                src="./assets/imgs/calvinKlein.png"
+                alt="calvin Klein logo"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="new-arrivals" class="newArrivals">
+        <div class="container">
+          <div class="section-main">
+            <h1 class="section-title">NEW ARRIVALS</h1>
+            <div class="products-cards"></div>
+            <button class="section-btn">View All</button>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <hr class="main-line" />
+      </div>
+      <section id="top-selling" class="newArrivals">
+        <div class="container">
+          <div class="section-main">
+            <h1 class="section-title">top selling</h1>
+            <div class="products-cards"></div>
+            <button class="section-btn">View All</button>
+          </div>
+        </div>
+      </section>
+      <section class="dress-style">
+        <div class="container">
+          <div class="dress-main">
+            <h2>BROWSE BY dress STYLE</h2>
+            <div class="dress-cards">
+              <div class="card">
+                <div class="card-img">
+                  <img src="./assets/imgs/dressStyle/casual.png" alt="" />
+                </div>
+                <h3>Casual</h3>
+              </div>
+              <div class="card">
+                <div class="card-img">
+                  <img src="./assets/imgs/dressStyle/formal.png" alt="" />
+                </div>
+                <h3>Formal</h3>
+              </div>
+              <div class="card">
+                <div class="card-img">
+                  <img src="./assets/imgs/dressStyle/party.png" alt="" />
+                </div>
+                <h3>Party</h3>
+              </div>
+              <div class="card">
+                <div class="card-img">
+                  <img src="./assets/imgs/dressStyle/gym.png" alt="" />
+                </div>
+                <h3>Gym</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="customer">
+        <div class="container">
+          <div class="customer-main">
+            <div class="customer-head">
+              <h1>OUR HAPPY CUSTOMERS</h1>
+              <div class="customer-btns">
+                <button id="customer-left">
+                  <i class="ri-arrow-left-line"></i>
+                </button>
+                <button id="customer-right">
+                  <i class="ri-arrow-right-line"></i>
+                </button>
+              </div>
+            </div>
+            <div class="customer-cards">
+              <div class="card">
+                <div class="card-stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <div class="card-name">
+                  <h3>Alex K.</h3>
+                  <span><i class="ri-checkbox-circle-fill"></i></span>
+                </div>
+                <p>
+                  "Finding clothes that align with my personal style used to be
+                  a challenge until I discovered Shop.co. The range of options
+                  they offer is truly remarkable, catering to a variety of
+                  tastes and occasions.”
+                </p>
+              </div>
+              <div class="card">
+                <div class="card-stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <div class="card-name">
+                  <h3>Alex K.</h3>
+                  <span><i class="ri-checkbox-circle-fill"></i></span>
+                </div>
+                <p>
+                  "Finding clothes that align with my personal style used to be
+                  a challenge until I discovered Shop.co. The range of options
+                  they offer is truly remarkable, catering to a variety of
+                  tastes and occasions.”
+                </p>
+              </div>
+              <div class="card">
+                <div class="card-stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <div class="card-name">
+                  <h3>Alex K.</h3>
+                  <span><i class="ri-checkbox-circle-fill"></i></span>
+                </div>
+                <p>
+                  "Finding clothes that align with my personal style used to be
+                  a challenge until I discovered Shop.co. The range of options
+                  they offer is truly remarkable, catering to a variety of
+                  tastes and occasions.”
+                </p>
+              </div>
+              <div class="card">
+                <div class="card-stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <div class="card-name">
+                  <h3>Alex K.</h3>
+                  <span><i class="ri-checkbox-circle-fill"></i></span>
+                </div>
+                <p>
+                  "Finding clothes that align with my personal style used to be
+                  a challenge until I discovered Shop.co. The range of options
+                  they offer is truly remarkable, catering to a variety of
+                  tastes and occasions.”
+                </p>
+              </div>
+              <div class="card">
+                <div class="card-stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <div class="card-name">
+                  <h3>Alex K.</h3>
+                  <span><i class="ri-checkbox-circle-fill"></i></span>
+                </div>
+                <p>
+                  "Finding clothes that align with my personal style used to be
+                  a challenge until I discovered Shop.co. The range of options
+                  they offer is truly remarkable, catering to a variety of
+                  tastes and occasions.”
+                </p>
+              </div>
+              <div class="card">
+                <div class="card-stars">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+                <div class="card-name">
+                  <h3>Alex K.</h3>
+                  <span><i class="ri-checkbox-circle-fill"></i></span>
+                </div>
+                <p>
+                  "Finding clothes that align with my personal style used to be
+                  a challenge until I discovered Shop.co. The range of options
+                  they offer is truly remarkable, catering to a variety of
+                  tastes and occasions.”
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer-container">
+        <div class="container">
+          <div class="date-offers">
+            <h2 class="heading">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+            <div class="sign-up">
+              <div class="input-email">
+                <button><i class="ri-mail-line"></i></button>
+                <input type="text" placeholder="Enter your email address" />
+              </div>
+              <button class="btn">Subscribe to Newsletter</button>
+            </div>
+          </div>
+
+          <div class="footer-ul-elements">
+            <div class="logo-icons">
+              <h2>SHOP.CO</h2>
+              <p>
+                We have clothes that suits your style and which you’re proud to
+                wear. From women to men.
+              </p>
+              <div class="icons">
+                <button>
+                  <i class="ri-twitter-fill"></i>
+                </button>
+                <button>
+                  <i class="ri-facebook-fill"></i>
+                </button>
+                <button>
+                  <i class="ri-instagram-line"></i>
+                </button>
+                <button>
+                  <i class="ri-github-fill"></i>
+                </button>
+              </div>
+            </div>
+            <div class="ul-list">
+              <h3>Company</h3>
+              <div class="lists">
+                <a href="">About</a>
+                <a href="">Features</a>
+                <a href="">Works</a>
+                <a href="">Career </a>
+              </div>
+            </div>
+            <div class="ul-list">
+              <h3>Help</h3>
+              <div class="lists">
+                <a href="">Customer Support</a>
+                <a href="">Delivery Details</a>
+                <a href="">Terms & Conditions</a>
+                <a href="">Privacy Policy</a>
+              </div>
+            </div>
+            <div class="ul-list">
+              <h3>FAQ</h3>
+              <div class="lists">
+                <a href="">Account</a>
+                <a href="">Manage Deliveries</a>
+                <a href="">Orders</a>
+                <a href="">Payments</a>
+              </div>
+            </div>
+            <div class="ul-list">
+              <h3>Resources</h3>
+              <div class="lists">
+                <a href="">Free eBooks</a>
+                <a href="">Development Tutorial</a>
+                <a href="">How to - Blog</a>
+                <a href="">Youtube Playlist</a>
+              </div>
+            </div>
+          </div>
+          <hr class="main-line" />
+          <div class="payment-methods">
+            <p>Shop.co © 2000-2023, All Rights Reserved</p>
+            <div class="payments">
+              <img src="./assets/imgs/payment pictures/Badge.png" alt="" />
+              <img src="./assets/imgs/payment pictures/Badge-1.png" alt="" />
+              <img src="./assets/imgs/payment pictures/Badge-2.png" alt="" />
+              <img src="./assets/imgs/payment pictures/Badge-3.png" alt="" />
+              <img src="./assets/imgs/payment pictures/Badge-4.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

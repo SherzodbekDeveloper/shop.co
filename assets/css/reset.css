@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1270px;
+    padding-inline: 15px;
+    margin-inline: auto;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+button {
+    background: transparent;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+input::placeholder {
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hidden {
+    display: none;
+}
