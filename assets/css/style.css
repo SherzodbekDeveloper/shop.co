@@ -7,7 +7,19 @@
     width: 100%;
     height: 100vh;
 }
-
+.loader{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: #000;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader img{
+    width: 100px;
+}
 header {
     position: fixed;
     z-index: 2;

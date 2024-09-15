@@ -1,19 +1,28 @@
-const productsDatas = [
-  {
-    title: "Gaming Mouse",
-    rate: 5,
-    price: 70,
-    discount: 15, // 15% off
-    image:
+
+window.addEventListener("DOMContentLoaded" ,() =>{
+
+  function removeLoader(){
+    const loader = document.querySelector('.loader')
+    loader.style.display = "none"
+  }
+  setTimeout(removeLoader, 500)
+
+  const productsDatas = [
+    {
+      title: "Gaming Mouse",
+      rate: 5,
+      price: 70,
+      discount: 15, // 15% off
+      image:
       "https://redragonshop.com/cdn/shop/products/ltcmouse.png?v=1597816435",
-  },
-  {
-    title: "Mechanical Keyboard",
+    },
+    {
+      title: "Mechanical Keyboard",
     rate: 4,
     price: 130,
     discount: 20, // 20% off
     image:
-      "https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-keyboard-rgb-gaming-white-small-bluetooth-png-vektor-transparent-background-png-image_5824348.png",
+    "https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-keyboard-rgb-gaming-white-small-bluetooth-png-vektor-transparent-background-png-image_5824348.png",
   },
   {
     title: "4K Monitor",
@@ -21,7 +30,7 @@ const productsDatas = [
     price: 400,
     discount: 30, // 30% off
     image:
-      "https://images.samsung.com/is/image/samsung/ie-monitor-ur55-lu28r550uquxen-frontblack-199058842?$650_519_PNG$",
+    "https://images.samsung.com/is/image/samsung/ie-monitor-ur55-lu28r550uquxen-frontblack-199058842?$650_519_PNG$",
   },
   {
     title: "USB-C Hub",
@@ -29,7 +38,7 @@ const productsDatas = [
     price: 50,
     discount: 10, // 10% off
     image:
-      "https://www.sitecom.com/media/4d/7c/ac/1686736087/8716502031658_1.png",
+    "https://www.sitecom.com/media/4d/7c/ac/1686736087/8716502031658_1.png",
   },
   {
     title: "Wireless Mouse",
@@ -37,7 +46,7 @@ const productsDatas = [
     price: 40,
     discount: 5, // 5% off
     image:
-      "https://resource.logitech.com/content/dam/logitech/en/products/mice/m185/gallery/m185-gallery-1-grey-emea.png",
+    "https://resource.logitech.com/content/dam/logitech/en/products/mice/m185/gallery/m185-gallery-1-grey-emea.png",
   },
   {
     title: "Noise Cancelling Earbuds",
@@ -45,7 +54,7 @@ const productsDatas = [
     price: 150,
     discount: 25, // 25% off
     image:
-      "https://www.denon.com/dw/image/v2/BGJH_PRD/on/demandware.static/-/Sites-master-catalog-soundunited/default/dwf2bd0a6c/denon/PDP_images/HeadphonesWirelessEarbuds/DenonNoiseCancellingEarbuds-Black/DenonNoiseCancelling-Black_front1.png?sw=2160",
+    "https://www.denon.com/dw/image/v2/BGJH_PRD/on/demandware.static/-/Sites-master-catalog-soundunited/default/dwf2bd0a6c/denon/PDP_images/HeadphonesWirelessEarbuds/DenonNoiseCancellingEarbuds-Black/DenonNoiseCancelling-Black_front1.png?sw=2160",
   },
   {
     title: "Smart Thermostat",
@@ -53,7 +62,7 @@ const productsDatas = [
     price: 180,
     discount: 15, // 15% off
     image:
-      "https://png.pngtree.com/png-vector/20221103/ourmid/pngtree-nest-thermostat-blue-panel-industry-central-vector-png-image_15171184.png",
+    "https://png.pngtree.com/png-vector/20221103/ourmid/pngtree-nest-thermostat-blue-panel-industry-central-vector-png-image_15171184.png",
   },
   {
     title: "Tablet Stand",
@@ -61,7 +70,7 @@ const productsDatas = [
     price: 25,
     discount: 10, // 10% off
     image:
-      "https://images.samsung.com/is/image/samsung/p6pim/sa_en/sm-a235flbvmea/gallery/sa-en-galaxy-a23-sm-a235-sm-a235flbvmea-532155476?$650_519_PNG$",
+    "https://images.samsung.com/is/image/samsung/p6pim/sa_en/sm-a235flbvmea/gallery/sa-en-galaxy-a23-sm-a235-sm-a235flbvmea-532155476?$650_519_PNG$",
   },
   {
     title: "Wi-Fi Router",
@@ -69,7 +78,7 @@ const productsDatas = [
     price: 100,
     discount: 20, // 20% off
     image:
-      "https://trueview.co.in/wp-content/uploads/2024/02/4G-5G-Wireless-Router-05.webp",
+    "https://trueview.co.in/wp-content/uploads/2024/02/4G-5G-Wireless-Router-05.webp",
   },
 ];
 
@@ -81,7 +90,7 @@ const toproductsDatas = [
     discount: 10, // 10% off
     image: "./assets/imgs/ProductsImages/product2.png",
   },
-
+  
   {
     title: "Portable Charger",
     rate: 3,
@@ -124,7 +133,7 @@ const toproductsDatas = [
     discount: 25, // 25% off
     image: "./assets/imgs/ProductsImages/product3.png",
   },
-
+  
   {
     title: "Noise Cancelling Headphones",
     rate: 3,
@@ -238,7 +247,7 @@ searchBtnMobile.addEventListener("click", () => {
 let lastScroll = window.scrollY;
 window.addEventListener("scroll", () => {
   let currentScroll = window.scrollY;
-
+  
   if (currentScroll >= lastScroll && currentScroll >= 50) {
     header.style.transform = "translate3d(0,-100%,0)";
   } else {
@@ -276,10 +285,10 @@ function animationCountUp(element, end, duration) {
   const incrementTime = 10;
   const steps = duration / incrementTime;
   const increment = end / steps;
-
+  
   let currentNumber = 0;
   let finishTime = 0;
-
+  
   const interval = setInterval(() => {
     finishTime += incrementTime;
     currentNumber += increment;
@@ -315,58 +324,58 @@ function createProducts(container, productDatas) {
     const newDiv = document.createElement("div");
     newDiv.className = "product-card";
     newDiv.innerHTML = `
-      <div class="card-img">
-        <img draggable="false" src="${product.image}" alt="" />
-      </div>
-      <div class="card-content">
-        <h2>${product.title}</h2>
-        <div class="rating">
-          <div class="stars">
-            ${createStar(product.rate)}
-          </div>
-          <div class="rating-number">
-            <span>${product.rate} /</span>
-            <span class="rating-grey">5</span>
-          </div>
-        </div>
-        <div class="price-div">
-          <span class="price">$${product.price - (product.price / 100) * product.discount
+    <div class="card-img">
+    <img draggable="false" src="${product.image}" alt="" />
+    </div>
+    <div class="card-content">
+    <h2>${product.title}</h2>
+    <div class="rating">
+    <div class="stars">
+    ${createStar(product.rate)}
+    </div>
+    <div class="rating-number">
+    <span>${product.rate} /</span>
+    <span class="rating-grey">5</span>
+    </div>
+    </div>
+    <div class="price-div">
+    <span class="price">$${product.price - (product.price / 100) * product.discount
       }</span>
           <span class="discount-price">$${product.price}</span>
           <span class="discount-pers">-${product.discount}%</span>
-        </div>
-      </div>`;
-
-    container.appendChild(newDiv);
-  });
-}
-
-createProducts(productsCardsContainers[0], productsDatas);
-createProducts(productsCardsContainers[1], toproductsDatas);
-
-productsCardsContainers.forEach((container) => {
-  let isDown = false;
-  let startX;
-  let scrolLeft;
-  container.addEventListener("mousedown", (e) => {
-    isDown = true;
-    container.classList.add("active");
-    startX = e.pageX;
-    scrolLeft = container.scrollLeft;
-  });
-  container.addEventListener("mouseleave", () => {
-    isDown = false;
-    container.classList.remove("active");
-  });
-  container.addEventListener("mouseup", () => {
-    isDown = false;
-    container.classList.remove("active");
-  });
-  container.addEventListener("mousemove", (e) => {
-    if (!isDown) return;
-    const currentX = e.pageX;
-    const walk = currentX - startX;
-    container.scrollLeft = scrolLeft - walk;
+          </div>
+          </div>`;
+          
+          container.appendChild(newDiv);
+        });
+      }
+      
+      createProducts(productsCardsContainers[0], productsDatas);
+      createProducts(productsCardsContainers[1], toproductsDatas);
+      
+      productsCardsContainers.forEach((container) => {
+        let isDown = false;
+        let startX;
+        let scrolLeft;
+        container.addEventListener("mousedown", (e) => {
+          isDown = true;
+          container.classList.add("active");
+          startX = e.pageX;
+          scrolLeft = container.scrollLeft;
+        });
+        container.addEventListener("mouseleave", () => {
+          isDown = false;
+          container.classList.remove("active");
+        });
+        container.addEventListener("mouseup", () => {
+          isDown = false;
+          container.classList.remove("active");
+        });
+        container.addEventListener("mousemove", (e) => {
+          if (!isDown) return;
+          const currentX = e.pageX;
+          const walk = currentX - startX;
+          container.scrollLeft = scrolLeft - walk;
   });
 });
 
@@ -379,11 +388,11 @@ const cardWidth = carousel.querySelector('.card').offsetWidth + 20;
 
 function createCarousel(parent, carouselObj) {
   parent.innerHTML = ""
-
+  
   carouselObj.forEach((element) => {
     const commentDiv = document.createElement('div')
     commentDiv.className = "card"
-
+    
     commentDiv.innerHTML += `
     <div class="card-stars">
     ${createStar(element.stars)}
@@ -397,15 +406,15 @@ function createCarousel(parent, carouselObj) {
     </p>
     `
     parent.appendChild(commentDiv)
-
+    
   })
 }
 
 createCarousel(carousel, comments)
 
 let isDragging = false,
-  dragStartX,
-  dragScrollLeft;
+dragStartX,
+dragScrollLeft;
 
 const dragStart = (e) => {
   isDragging = true;
@@ -432,14 +441,14 @@ carouselBtns.forEach((btn, index) => {
   btn.addEventListener('click', () => {
     if (isScrolling) return;  
     isScrolling = true;      
-
+    
     const cardWidth = carousel.querySelector('.card').offsetWidth + 20; 
     const direction = index === 0 ? -1 : 1;
     carousel.scrollBy({
       left: direction * cardWidth,
       behavior: "smooth"
     });
-
+    
     setTimeout(() => {
       isScrolling = false;  
     }, 500); 
@@ -450,3 +459,5 @@ carousel.addEventListener('mousedown', dragStart);
 carousel.addEventListener('mousemove', dragging);
 carousel.addEventListener('mouseleave', dragStop);
 carousel.addEventListener('mouseup', dragStop);
+
+})
