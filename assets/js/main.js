@@ -1,12 +1,14 @@
 
 window.addEventListener("DOMContentLoaded" ,() =>{
 
-  function removeLoader(){
-    const loader = document.querySelector('.loader')
-    loader.style.display = "none"
+  // function removeLoader(){
+  //   const loader = document.querySelector('.loader')
+  //   loader.style.display = "none"
+  // }
+  // setTimeout(removeLoader, 500)
+  window.onload = function(){
+    document.querySelector('.loader').style.display = "none"
   }
-  setTimeout(removeLoader, 500)
-
   const productsDatas = [
     {
       title: "Gaming Mouse",
